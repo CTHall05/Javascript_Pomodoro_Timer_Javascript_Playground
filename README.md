@@ -1,1 +1,1 @@
-# Javascript_Pomodoro_Timer_Javascript_Playground
+# Pomodoro Timer - Javascript Payground
