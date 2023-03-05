@@ -5,16 +5,36 @@
 }
 
 :root {
-
+  --primary-colour: #6096B4;
+  --seccondary-colour: #EB6440;
+  --clock-colour: #b7410e;
+  --text-colour: white;
 }
 
 body {
-  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-image: url(./images/backgroundimage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
   margin: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 90vh;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5em;
+  color: var(--text-colour);
+  width: 80%;
+  font-family: sans-serif;
 }
 
 .timer {
@@ -25,7 +45,7 @@ body {
   font-family: sans-serif;
   padding: 24px 34px;
   border-radius: 30px;
-  background-color: white;
+  background-color: var(--primary-colour);
 }
 
 .timer__part {
@@ -38,4 +58,16 @@ body {
   height: 50px;
   margin-left: 16px;
   border-radius: 50%;
+  border: none;
+  color: white;
+  background: var(--clock-colour);
+  cursor: pointer;
+}
+
+.timer__btn--start {
+  background-color: green;
+}
+
+.timer__btn--stop {
+  background-color: red;
 }
